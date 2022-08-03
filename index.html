@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/font.css">
+  </head>
+  <body>
+    <div class="inputContainer">
+      <div class="userText_container">
+        <label for="userText" class="usertextLabel">Enter Text</label>
+        <textarea id="userText"></textarea>
+      </div>
+      <div class="fontSize_container">
+        <label for="fontSize" class="fontsizeLabel">Font size</label>
+        <input type="number" id="fontSize" value="27">
+        <span>px</span>
+      </div>
+      <div class="colorPicker">
+        <label for="chooseColor" class="userColor">Color</label>
+        <input type="color" id="chooseColor" >
+        <button id="colorBtn">Click to Pick Color</button>
+      </div>
+      <button id="generateBtn">Generate</button>
+    </div>
+    <div class="output_Container">
+        <!-- img will load here -->
+    </div>
+
+    <!-- connecting canvas api  -->
+    <script src="./js/html2canvas.js"></script>
+    
+    <script src="./js/app.js"></script>
+  </body>
+</html>
