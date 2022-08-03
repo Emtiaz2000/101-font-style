@@ -102,10 +102,7 @@ const fontFamily=[
     'customFont95',
     'customFont96',
     'customFont97',
-    'customFont98',
-    'customFont99',
-    'customFont100',
-    'customFont101'
+    'customFont98'
 
 ]
 const userText = document.querySelector('#userText')
