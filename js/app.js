@@ -149,7 +149,11 @@ generateBtn.addEventListener('click',()=>{
     document.querySelectorAll('.downloadBtn').forEach((btn)=>{
          btn.addEventListener('click',()=>{
             btn.style.opacity=0
-            html2canvas(btn.previousElementSibling.parentElement).then((canvas) => {
+            html2canvas(btn.previousElementSibling.parentElement[0],{
+                allowTaint: true,
+                backgroundColor: 'transparent',
+                useCORS: true
+            }).then((canvas) => {
                const base64img = canvas.toDataURL('image/png')
                let anchor = document.createElement('a')
                anchor.setAttribute('href',base64img)
